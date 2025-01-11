@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import useAllMenus from "../Hooks/useAllMenus/useAllMenus";
+import useAllMenus from "../Hooks/useAllMenus";
 import { motion } from "framer-motion";
 import useUpAnimation from "../Hooks/useUpAnimation";
 import useFadeAnimation from "../Hooks/useFadeAnimation";

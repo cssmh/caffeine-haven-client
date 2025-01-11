@@ -1,6 +1,5 @@
-import useFadeAnimation from "../../Hooks/useFadeAnimation/useFadeAnimation";
 import { motion } from "framer-motion";
-
+import useFadeAnimation from "../Hooks/useFadeAnimation";
 
 const img19 = "https://i.ibb.co/ygVGcbY/ig-9.jpg";
 const img2 = "https://i.ibb.co/DpkZVRd/coffee-1.jpg";
@@ -18,45 +17,55 @@ const img13 = "https://i.ibb.co/QfWCSx9/ig-19-370x370.jpg";
 const img14 = "https://i.ibb.co/yyS7ykV/ig-4-300x300.jpg";
 const img15 = "https://i.ibb.co/kGB5dvN/coffee-bg-1.jpg";
 
-
-
 const InstagramPost = () => {
+  // hooks
+  const fadeAnimation = useFadeAnimation();
 
-    // hooks
-    const fadeAnimation = useFadeAnimation();
+  return (
+    <div className="w-full mx-auto relative mt-14">
+      <div className="grid grid-cols-3 md:grid-cols-6 gap-2 opacity-70">
+        <img
+          src={img19}
+          alt=""
+          className="md:col-span-2 md:row-span-2 justify-self-stretch"
+        />
+        <img src={img2} alt="" className="self-stretch justify-self-stretch" />
+        <img src={img3} alt="" className="self-stretch justify-self-stretch" />
+        <img
+          src={img4}
+          alt=""
+          className="md:col-span-2 md:row-span-2 self-stretch justify-self-stretch"
+        />
+        <img src={img5} alt="" className="self-stretch justify-self-stretch" />
+        <img src={img6} alt="" className="self-stretch justify-self-stretch" />
+        <img src={img7} alt="" className="self-stretch justify-self-stretch" />
+        <img src={img8} alt="" className="self-stretch justify-self-stretch" />
+        <img
+          src={img9}
+          alt=""
+          className="md:col-span-2 md:row-span-2 self-stretch justify-self-stretch"
+        />
+        <img src={img10} alt="" className="self-stretch justify-self-stretch" />
+        <img src={img11} alt="" className="self-stretch justify-self-stretch" />
+        <img src={img12} alt="" className="self-stretch justify-self-stretch" />
+        <img src={img13} alt="" className="self-stretch justify-self-stretch" />
+        <img src={img14} alt="" className="self-stretch justify-self-stretch" />
+        <img src={img15} alt="" className="self-stretch justify-self-stretch" />
+      </div>
 
-    return (
-
-        <div className="w-full mx-auto relative mt-14">
-            <div className="grid grid-cols-3 md:grid-cols-6 gap-2 opacity-70">
-                <img src={img19} alt="" className="md:col-span-2 md:row-span-2 justify-self-stretch" />
-                <img src={img2} alt="" className="self-stretch justify-self-stretch" />
-                <img src={img3} alt="" className="self-stretch justify-self-stretch" />
-                <img src={img4} alt="" className="md:col-span-2 md:row-span-2 self-stretch justify-self-stretch" />
-                <img src={img5} alt="" className="self-stretch justify-self-stretch" />
-                <img src={img6} alt="" className="self-stretch justify-self-stretch" />
-                <img src={img7} alt="" className="self-stretch justify-self-stretch" />
-                <img src={img8} alt="" className="self-stretch justify-self-stretch" />
-                <img src={img9} alt="" className="md:col-span-2 md:row-span-2 self-stretch justify-self-stretch" />
-                <img src={img10} alt="" className="self-stretch justify-self-stretch" />
-                <img src={img11} alt="" className="self-stretch justify-self-stretch" />
-                <img src={img12} alt="" className="self-stretch justify-self-stretch" />
-                <img src={img13} alt="" className="self-stretch justify-self-stretch" />
-                <img src={img14} alt="" className="self-stretch justify-self-stretch" />
-                <img src={img15} alt="" className="self-stretch justify-self-stretch" />
-            </div>
-
-            <motion.div
-                variants={fadeAnimation(1.4, .4)}
-                initial="hidden"
-                whileInView={"visible"}
-                className="bg-white w-[250px] lg:w-[300px] h-[250px] lg:h-[300px] rounded-[50%] flex justify-center items-center absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-[99] text-second hover:text-main duration-300">
-                <p className="text-center font-body font-medium capitalize text-2xl">Follow Us on <br />Instagram</p>
-            </motion.div>
-        </div>
-
-    )
-        ;
+      <motion.div
+        variants={fadeAnimation(1.4, 0.4)}
+        initial="hidden"
+        whileInView={"visible"}
+        className="bg-white w-[250px] lg:w-[300px] h-[250px] lg:h-[300px] rounded-[50%] flex justify-center items-center absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-[99] text-second hover:text-main duration-300"
+      >
+        <p className="text-center font-body font-medium capitalize text-2xl">
+          Follow Us on <br />
+          Instagram
+        </p>
+      </motion.div>
+    </div>
+  );
 };
 
 export default InstagramPost;

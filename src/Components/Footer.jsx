@@ -7,8 +7,8 @@ import {
   FaYoutube,
 } from "react-icons/fa6";
 import { motion } from "framer-motion";
-import useDownAnimation from "../Hooks/useDownAnimation/useDownAnimation";
-import useUpAnimation from "../Hooks/useUpAnimation/useUpAnimation";
+import useDownAnimation from "../Hooks/useDownAnimation";
+import useUpAnimation from "../Hooks/useUpAnimation";
 
 // website logo
 const logo = "https://i.ibb.co/sR7yV2c/website-Logo.png";

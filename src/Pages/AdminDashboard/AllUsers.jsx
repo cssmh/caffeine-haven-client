@@ -6,10 +6,10 @@ import {
   getPaginationRowModel,
   useReactTable,
 } from "@tanstack/react-table";
-import useFailedToast from "../../../Hooks/useFailedToast/useFailedToast";
-import useSuccessToast from "../../../Hooks/useSuccessToast/useSuccessToast";
 import Swal from "sweetalert2";
 import useAxiosSecure from "../../Hooks/useAxiosSecure";
+import useFailedToast from "../../Hooks/useFailedToast";
+import useSuccessToast from "../../Hooks/useSuccessToast";
 import LoadingAnimation from "../../Components/LoadingAnimation";
 
 const AllUsers = () => {
