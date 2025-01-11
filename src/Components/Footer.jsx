@@ -22,18 +22,19 @@ const Footer = () => {
 
   return (
     <footer className="footer footer-center p-10 bg-third font-body">
-      <motion.Link
-        to={"/"}
+      <motion.div
         variants={downAnimation(1, 0.4)}
         initial="hidden"
         whileInView={"visible"}
       >
-        <img
-          src={logo}
-          alt="website logo"
-          className="w-[175px] h-[70px] hover:scale-110 duration-500"
-        />
-      </motion.Link>
+        <Link to={"/"}>
+          <img
+            src={logo}
+            alt="website logo"
+            className="w-[175px] h-[70px] hover:scale-110 duration-500"
+          />
+        </Link>
+      </motion.div>
       {/* nav links */}
       <nav className="grid grid-flow-col gap-4">
         <Link
