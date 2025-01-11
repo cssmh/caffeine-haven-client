@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { motion } from "framer-motion";
 import {
   Link,
   NavLink,
@@ -5,18 +7,14 @@ import {
   useLocation,
   useNavigate,
 } from "react-router-dom";
-import useCurrentUser from "../src/Hooks/useCurrentUser/useCurrentUser";
-import { useEffect } from "react";
-import useDownAnimation from "../src/Hooks/useDownAnimation/useDownAnimation";
-import { motion } from "framer-motion";
-import useScrollToTop from "../src/Hooks/useScrollToTop/useScrollToTop";
+import useCurrentUser from "../Hooks/useCurrentUser";
+import useDownAnimation from "../Hooks/useDownAnimation";
+import useScrollToTop from "../Hooks/useScrollToTop";
 
-// website logo
 const logo = "https://i.ibb.co/sR7yV2c/website-Logo.png";
 const bgImg = "https://i.ibb.co/FWDxTW1/restaurant.jpg";
 
 const Dashboard = () => {
-  // hooks and custom hooks
   const location = useLocation();
   const { userPending, user } = useCurrentUser();
   const navigate = useNavigate();

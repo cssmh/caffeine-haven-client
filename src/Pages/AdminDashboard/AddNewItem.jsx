@@ -1,10 +1,10 @@
 import { useRef, useState } from "react";
-import useAxiosSecure from "../../../Hooks/useAxiosSecure/useAxiosSecure";
-import useCurrentUser from "../../../Hooks/useCurrentUser/useCurrentUser";
 import { FaUpload } from "react-icons/fa6";
-import useAxiosPublic from "../../../Hooks/useAxiosPublic/useAxiosPublic";
-import useSuccessToast from "../../../Hooks/useSuccessToast/useSuccessToast";
-import useFailedToast from "../../../Hooks/useFailedToast/useFailedToast";
+import useAxiosSecure from "../../Hooks/useAxiosSecure";
+import useCurrentUser from "../../Hooks/useCurrentUser";
+import useAxiosPublic from "../../Hooks/useAxiosPublic";
+import useSuccessToast from "../../Hooks/useSuccessToast";
+import useFailedToast from "../../Hooks/useFailedToast";
 
 const foodOriginList = [
   "american",

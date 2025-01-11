@@ -1,19 +1,19 @@
-import { FaCamera } from "react-icons/fa6";
-import useAxiosPublic from "../../Hooks/useAxiosPublic";
-import { useRef, useState } from "react";
-import useCurrentUser from "../../Hooks/useCurrentUser/useCurrentUser";
-import { Link } from "react-router-dom";
-import ButtonMain from "../../Components/ButtonMain/ButtonMain";
-import useFailedToast from "../../Hooks/useFailedToast/useFailedToast";
-import useSuccessToast from "../../Hooks/useSuccessToast/useSuccessToast";
-import useAxiosSecure from "../../Hooks/useAxiosSecure/useAxiosSecure";
-import { useQuery } from "@tanstack/react-query";
-import LoadingAnimation from "../../Components/LoadingAnimation";
-import SingleMemory from "./SingleMemory";
-import PinnedMemory from "./PinnedMemory";
 import { motion } from "framer-motion";
-import useUpAnimation from "../../Hooks/useUpAnimation/useUpAnimation";
-import useRightAnimation from "../../Hooks/useRightAnimation/useRightAnimation";
+import { FaCamera } from "react-icons/fa6";
+import { useRef, useState } from "react";
+import { Link } from "react-router-dom";
+import { useQuery } from "@tanstack/react-query";
+import useAxiosPublic from "../../Hooks/useAxiosPublic";
+import useAxiosSecure from "../../Hooks/useAxiosSecure";
+import useCurrentUser from "../../Hooks/useCurrentUser";
+import useFailedToast from "../../Hooks/useFailedToast";
+import useSuccessToast from "../../Hooks/useSuccessToast";
+import useUpAnimation from "../../Hooks/useUpAnimation";
+import useRightAnimation from "../../Hooks/useRightAnimation";
+import LoadingAnimation from "../../Components/LoadingAnimation";
+import ButtonMain from "../../Components/ButtonMain";
+import PinnedMemory from "./PinnedMemory";
+import SingleMemory from "./SingleMemory";
 
 const bgImg = "https://i.ibb.co/fdNsdhd/coffee-bg-1.jpg";
 const imgUploadUrl = `https://api.imgbb.com/1/upload?key=${

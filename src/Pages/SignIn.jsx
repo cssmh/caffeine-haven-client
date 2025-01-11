@@ -1,18 +1,17 @@
+import { useState } from "react";
 import { BsFillEyeFill, BsFillEyeSlashFill } from "react-icons/bs";
 import { MdHome } from "react-icons/md";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import CenteredSectionTitle from "../../Components/CenteredSectionTitle/CenteredSectionTitle";
-import { useState } from "react";
+import { FaGoogle } from "react-icons/fa";
 import useAuthContext from "../Hooks/useAuthContext";
 import useAxiosPublic from "../Hooks/useAxiosPublic";
-import useSuccessToast from "../Hooks/useSuccessToast/useSuccessToast";
-import useFailedToast from "../Hooks/useFailedToast/useFailedToast";
-import { FaGoogle } from "react-icons/fa";
+import useSuccessToast from "../Hooks/useSuccessToast";
+import useFailedToast from "../Hooks/useFailedToast";
+import CenteredSectionTitle from "../Components/CenteredSectionTitle";
 
 const img1 = "https://i.ibb.co/FWDxTW1/restaurant.jpg";
 
 const SignIn = () => {
-  // hooks and custom hooks
   const [showPassword, setShowPassword] = useState(false);
   const { createNewUserByGoogle, signInUser } = useAuthContext();
   const location = useLocation();

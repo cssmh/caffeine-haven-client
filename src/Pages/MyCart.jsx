@@ -1,6 +1,4 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import LoadingAnimation from "../../Components/LoadingAnimation";
-import useCartItems from "../../Hooks/useCartItems/useCartItems";
 import {
   flexRender,
   getCoreRowModel,
@@ -8,13 +6,15 @@ import {
   useReactTable,
 } from "@tanstack/react-table";
 import { Link } from "react-router-dom";
-import useAxiosSecure from "../../Hooks/useAxiosSecure/useAxiosSecure";
-import useFailedToast from "../../Hooks/useFailedToast/useFailedToast";
 import { MdCancel } from "react-icons/md";
-import useSuccessToast from "../../Hooks/useSuccessToast/useSuccessToast";
 import { motion } from "framer-motion";
-import useUpAnimation from "../../Hooks/useUpAnimation/useUpAnimation";
-import useFadeAnimation from "../../Hooks/useFadeAnimation/useFadeAnimation";
+import useCartItems from "../Hooks/useCartItems";
+import useAxiosSecure from "../Hooks/useAxiosSecure";
+import useFailedToast from "../Hooks/useFailedToast";
+import useSuccessToast from "../Hooks/useSuccessToast";
+import useUpAnimation from "../Hooks/useUpAnimation";
+import useFadeAnimation from "../Hooks/useFadeAnimation";
+import LoadingAnimation from "../Components/LoadingAnimation";
 
 const bgImg = "https://i.ibb.co/4gRwyng/scrsht-com-3-59-17-PM.png";
 

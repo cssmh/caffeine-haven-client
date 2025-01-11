@@ -4,13 +4,13 @@ import {
   getPaginationRowModel,
   useReactTable,
 } from "@tanstack/react-table";
-import useAxiosSecure from "../../../Hooks/useAxiosSecure/useAxiosSecure";
-import useFailedToast from "../../../Hooks/useFailedToast/useFailedToast";
-import useSuccessToast from "../../../Hooks/useSuccessToast/useSuccessToast";
 import { useQuery } from "@tanstack/react-query";
 import Swal from "sweetalert2";
 import { useMemo } from "react";
-import LoadingAnimation from "../../../Components/LoadingAnimation";
+import useAxiosSecure from "../../Hooks/useAxiosSecure";
+import useFailedToast from "../../Hooks/useFailedToast";
+import useSuccessToast from "../../Hooks/useSuccessToast";
+import LoadingAnimation from "../../Components/LoadingAnimation";
 
 const Coupons = () => {
   // hooks and custom hooks

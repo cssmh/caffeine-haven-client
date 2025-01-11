@@ -1,9 +1,9 @@
+import { Link } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import useAxiosPublic from "../../Hooks/useAxiosPublic";
-import SingleMenuList from "../../Components/SingleMenuList/SingleMenuList";
-import CenteredSectionTitle from "../../Components/CenteredSectionTitle/CenteredSectionTitle";
-import ButtonMain from "../../Components/ButtonMain/ButtonMain";
-import { Link } from "react-router-dom";
+import CenteredSectionTitle from "../../Components/CenteredSectionTitle";
+import SingleMenuList from "../../Components/SingleMenuList";
+import ButtonMain from "../../Components/ButtonMain";
 
 const HomePageMenus = () => {
   // hooks and custom hooks

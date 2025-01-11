@@ -1,32 +1,32 @@
 import { createBrowserRouter } from "react-router-dom";
-import Root from "./MainLayout";
+import MainLayout from "./MainLayout";
 import ErrorPage from "../Pages/ErrorPage";
 import Home from "../Pages/HomePage/Home";
+import OurMenus from "../Pages/OurMenus";
+import AboutUs from "../Pages/HomePage/About";
+import Contact from "../Pages/Contact";
+import StoryHub from "../Pages/StoryHub/StoryHub";
+import FindATable from "../Pages/FindATable";
+import PrivateRoute from "./PrivateRoute";
+import MyCart from "../Pages/MyCart";
+import Checkout from "../Pages/Checkout/Checkout";
+import CheckoutSuccess from "../Pages/Checkout/CheckoutSuccess";
 import Register from "../Pages/Register";
 import SignIn from "../Pages/SignIn";
-import AddNewItem from "../Pages/AdminDashboard/AddNewItem/AddNewItem";
-import OurMenus from "../Pages/OurMenus";
-import AllUsers from "../Pages/AdminDashboard/AllUsers/AllUsers";
-import AllItems from "../Pages/AdminDashboard/AllItems/AllItems";
-import UpdateItem from "../Pages/AdminDashboard/UpdateItem";
-import StoryHub from "../Pages/StoryHub/StoryHub";
-import FindATable from "../Pages/FindATable/FindATable";
-import AllReservation from "../Pages/AdminDashboard/AllReservation/AllReservation";
-import AboutUs from "../Pages/AboutUs";
-import Contact from "../Pages/Contact";
-import MyCart from "../Pages/MyCart/MyCart";
-import Coupons from "../Pages/AdminDashboard/Coupons/Coupons";
-import Checkout from "../Pages/Checkout/Checkout";
-import PrivateRoute from "../Router/PrivateRoute/PrivateRoute";
-import AdminRoute from "../Router/AdminRoute/AdminRoute";
+import AdminRoute from "./AdminRoute";
 import Dashboard from "./Dashboard";
-import AdminStatistics from "../Pages/AdminDashboard/AdminStatistics/AdminStatistics";
-import CheckoutSuccess from "../Pages/Checkout/CheckoutSuccess";
+import AdminStatistics from "../Pages/AdminDashboard/AdminStatistics";
+import AddNewItem from "../Pages/AdminDashboard/AddNewItem";
+import AllUsers from "../Pages/AdminDashboard/AllUsers";
+import AllItems from "../Pages/AdminDashboard/AllItems";
+import UpdateItem from "../Pages/AdminDashboard/UpdateItem";
+import AllReservation from "../Pages/AdminDashboard/AllReservation";
+import Coupons from "../Pages/AdminDashboard/Coupons";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root />,
+    element: <MainLayout />,
     errorElement: <ErrorPage />,
     children: [
       {

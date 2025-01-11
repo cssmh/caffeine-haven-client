@@ -1,8 +1,4 @@
 import { useMemo } from "react";
-import useAllMenus from "../../../Hooks/useAllMenus/useAllMenus";
-import useAxiosSecure from "../../../Hooks/useAxiosSecure/useAxiosSecure";
-import useFailedToast from "../../../Hooks/useFailedToast/useFailedToast";
-import useSuccessToast from "../../../Hooks/useSuccessToast/useSuccessToast";
 import Swal from "sweetalert2";
 import {
   flexRender,
@@ -10,7 +6,11 @@ import {
   getPaginationRowModel,
   useReactTable,
 } from "@tanstack/react-table";
-import LoadingAnimation from "../../../Components/LoadingAnimation";
+import useAxiosSecure from "../../Hooks/useAxiosSecure";
+import useFailedToast from "../../Hooks/useFailedToast";
+import useSuccessToast from "../../Hooks/useSuccessToast";
+import useAllMenus from "../../Hooks/useAllMenus";
+import LoadingAnimation from "../../Components/LoadingAnimation";
 
 const AllItems = () => {
   // hooks and custom hooks

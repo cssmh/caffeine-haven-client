@@ -10,10 +10,10 @@ import {
 } from "firebase/auth";
 import { createContext, useEffect, useState } from "react";
 import app from "./Firebase.config";
-import useAxiosPublic from "../../Hooks/useAxiosPublic/useAxiosPublic";
+import useAxiosPublic from "../Hooks/useAxiosPublic";
 
 const auth = getAuth(app);
-export const AuthContext = createContext("");
+export const AuthContext = createContext(null);
 const googleProvider = new GoogleAuthProvider();
 
 const AuthProvider = ({ children }) => {

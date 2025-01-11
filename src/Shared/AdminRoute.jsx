@@ -1,22 +1,15 @@
 import { Navigate, useLocation } from "react-router-dom";
-import LoadingAnimation from "../src/Components/LoadingAnimation/LoadingAnimation";
-import useIsAdmin from "../src/Hooks/useIsAdmin/useIsAdmin";
-import useAuthContext from "../src/Hooks/useAuthContext/useAuthContext";
+import useIsAdmin from "../Hooks/useIsAdmin";
+import useAuthContext from "../Hooks/useAuthContext";
+import LoadingAnimation from "../Components/LoadingAnimation";
 
 const AdminRoute = ({ children }) => {
-  // hooks and custom hooks
   const { isAdminPending, isAdmin } = useIsAdmin();
   const { authLoading, currentUser } = useAuthContext();
   const location = useLocation();
 
-  if (authLoading || isAdminPending) {
-    return <LoadingAnimation />;
-  }
-
-  if (currentUser && isAdmin) {
-    return children;
-  }
-
+  if (authLoading || isAdminPending) return <LoadingAnimation />;
+  if (currentUser && isAdmin) return children;
   return <Navigate to={"/"} state={{ from: location }}></Navigate>;
 };
 

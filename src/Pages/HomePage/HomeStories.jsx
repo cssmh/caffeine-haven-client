@@ -4,17 +4,15 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import CenteredSectionTitle from "../../Components/CenteredSectionTitle/CenteredSectionTitle";
 import { Link } from "react-router-dom";
-import ButtonMain from "../../Components/ButtonMain/ButtonMain";
-import useAxiosPublic from "../../Hooks/useAxiosPublic";
 import { useQuery } from "@tanstack/react-query";
+import useAxiosPublic from "../../Hooks/useAxiosPublic";
+import CenteredSectionTitle from "../../Components/CenteredSectionTitle";
+import ButtonMain from "../../Components/ButtonMain";
 
 const HomeStories = () => {
-  // hooks
   const axiosPublic = useAxiosPublic();
 
-  // data fetch
   const { isPending: storiesPending, data: stories } = useQuery({
     queryKey: ["home-stories"],
     queryFn: async () => {

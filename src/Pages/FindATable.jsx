@@ -1,7 +1,7 @@
 import { useRef } from "react";
-import useAxiosPublic from "../../Hooks/useAxiosPublic/useAxiosPublic";
-import useSuccessToast from "../../Hooks/useSuccessToast/useSuccessToast";
-import useFailedToast from "../../Hooks/useFailedToast/useFailedToast";
+import useAxiosPublic from "../Hooks/useAxiosPublic";
+import useSuccessToast from "../Hooks/useSuccessToast";
+import useFailedToast from "../Hooks/useFailedToast";
 
 const bgImg = "https://i.ibb.co/FWDxTW1/restaurant.jpg";
 // array
@@ -24,7 +24,7 @@ const FindATable = () => {
     // hooks
     const axiosPublic = useAxiosPublic();
     const reservationForm = useRef(null);
-    const successToast = useSuccessToast;
+    const successToast = useSuccessToast();
     const failedToast = useFailedToast();
 
 

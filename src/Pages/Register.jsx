@@ -1,13 +1,13 @@
 import { useRef, useState } from "react";
-import CenteredSectionTitle from "../../Components/CenteredSectionTitle/CenteredSectionTitle";
 import { FaUpload } from "react-icons/fa";
 import { BsFillEyeFill, BsFillEyeSlashFill } from "react-icons/bs";
 import { MdHome } from "react-icons/md";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import useAuthContext from "../Hooks/useAuthContext";
 import useAxiosPublic from "../Hooks/useAxiosPublic";
-import useSuccessToast from "../Hooks/useSuccessToast/useSuccessToast";
-import useFailedToast from "../Hooks/useFailedToast/useFailedToast";
+import useSuccessToast from "../Hooks/useSuccessToast";
+import useFailedToast from "../Hooks/useFailedToast";
+import CenteredSectionTitle from "../Components/CenteredSectionTitle";
 
 const img1 = "https://i.ibb.co/FWDxTW1/restaurant.jpg";
 const imgUploadUrl = `https://api.imgbb.com/1/upload?key=${

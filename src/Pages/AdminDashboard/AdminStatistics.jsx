@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
-import useAxiosSecure from "../../../Hooks/useAxiosSecure/useAxiosSecure";
-import LoadingAnimation from "../../../Components/LoadingAnimation";
+import useAxiosSecure from "../../Hooks/useAxiosSecure";
+import LoadingAnimation from "../../Components/LoadingAnimation";
 
 const AdminStatistics = () => {
   // hooks and custom hooks

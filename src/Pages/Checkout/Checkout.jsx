@@ -1,13 +1,13 @@
 import { useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
-import useCartItems from "../../Hooks/useCartItems/useCartItems";
-import LoadingAnimation from "../../Components/LoadingAnimation";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 import CheckOutForm from "./CheckoutForm";
 import { useEffect, useState } from "react";
-import useAxiosSecure from "../../Hooks/useAxiosSecure/useAxiosSecure";
-import useUpAnimation from "../../Hooks/useUpAnimation/useUpAnimation";
+import useUpAnimation from "../../Hooks/useUpAnimation";
+import useAxiosSecure from "../../Hooks/useAxiosSecure";
+import useCartItems from "../../Hooks/useCartItems";
+import LoadingAnimation from "../../Components/LoadingAnimation";
 
 // bg image
 const bgImg =

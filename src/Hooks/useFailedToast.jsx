@@ -1,14 +1,11 @@
 import { toast } from "sonner";
 
-
 const useFailedToast = () => {
+  const failedToast = (message) => {
+    toast.error(`${message}`);
+  };
 
-    const failedToast = message => {
-        toast.error(`${message}`);
-    }
-
-    return failedToast;
-
+  return failedToast;
 };
 
 export default useFailedToast;

@@ -1,14 +1,11 @@
 import { toast } from "sonner";
 
-
 const useSuccessToast = () => {
+  const successToast = (message) => {
+    toast.success(`${message}`);
+  };
 
-    const successToast = message => {
-        toast.success(`${message}`);
-    }
-
-    return successToast;
-
+  return successToast;
 };
 
 export default useSuccessToast;

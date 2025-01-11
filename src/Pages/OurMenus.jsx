@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
-import LoadingAnimation from "../Components/LoadingAnimation";
-import SingleMenuList from "../../Components/SingleMenuList/SingleMenuList";
 import useAllMenus from "../Hooks/useAllMenus/useAllMenus";
 import { motion } from "framer-motion";
-import useUpAnimation from "../Hooks/useUpAnimation/useUpAnimation";
-import useFadeAnimation from "../Hooks/useFadeAnimation/useFadeAnimation";
-import useDownAnimation from "../Hooks/useDownAnimation/useDownAnimation";
-import useScrollToTop from "../Hooks/useScrollToTop/useScrollToTop";
+import useUpAnimation from "../Hooks/useUpAnimation";
+import useFadeAnimation from "../Hooks/useFadeAnimation";
+import useDownAnimation from "../Hooks/useDownAnimation";
+import useScrollToTop from "../Hooks/useScrollToTop";
+import LoadingAnimation from "../Components/LoadingAnimation";
+import SingleMenuList from "../Components/SingleMenuList";
 
 const bgImg = "https://i.ibb.co/R7zFLT7/home-bg-8-1.jpg";
 

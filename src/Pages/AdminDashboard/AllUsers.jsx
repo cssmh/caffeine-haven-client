@@ -1,7 +1,5 @@
-import { useQuery } from "@tanstack/react-query";
-import useAxiosSecure from "../../../Hooks/useAxiosSecure/useAxiosSecure";
-import LoadingAnimation from "../../../Components/LoadingAnimation";
 import { useMemo } from "react";
+import { useQuery } from "@tanstack/react-query";
 import {
   flexRender,
   getCoreRowModel,
@@ -11,6 +9,8 @@ import {
 import useFailedToast from "../../../Hooks/useFailedToast/useFailedToast";
 import useSuccessToast from "../../../Hooks/useSuccessToast/useSuccessToast";
 import Swal from "sweetalert2";
+import useAxiosSecure from "../../Hooks/useAxiosSecure";
+import LoadingAnimation from "../../Components/LoadingAnimation";
 
 const AllUsers = () => {
   // hooks and custom hooks

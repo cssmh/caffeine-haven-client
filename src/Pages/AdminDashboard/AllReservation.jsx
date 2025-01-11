@@ -1,13 +1,13 @@
-import { useQuery } from "@tanstack/react-query";
-import useAxiosSecure from "../../../Hooks/useAxiosSecure/useAxiosSecure";
-import LoadingAnimation from "../../../Components/LoadingAnimation";
 import { useMemo } from "react";
+import { useQuery } from "@tanstack/react-query";
 import {
   flexRender,
   getCoreRowModel,
   getPaginationRowModel,
   useReactTable,
 } from "@tanstack/react-table";
+import useAxiosSecure from "../../Hooks/useAxiosSecure";
+import LoadingAnimation from "../../Components/LoadingAnimation";
 
 const AllReservation = () => {
   // hooks and custom hooks

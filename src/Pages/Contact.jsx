@@ -1,10 +1,10 @@
-import SectionTitle from "../../Components/SectionTitle/SectionTitle";
-import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
-import { motion } from "framer-motion";
-import useUpAnimation from "../Hooks/useUpAnimation/useUpAnimation";
-import useRightAnimation from "../Hooks/useRightAnimation/useRightAnimation";
-import useScrollToTop from "../Hooks/useScrollToTop/useScrollToTop";
 import { useEffect } from "react";
+import { motion } from "framer-motion";
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import useUpAnimation from "../Hooks/useUpAnimation";
+import useRightAnimation from "../Hooks/useRightAnimation";
+import useScrollToTop from "../Hooks/useScrollToTop";
+import SectionTitle from "../Components/SectionTitle";
 
 const bgImg =
   "https://i.ibb.co/Jpbs9D7/snezhana-hulak-TUc-AOOHd-Mek-unsplash-2.jpg";

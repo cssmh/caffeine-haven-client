@@ -1,13 +1,13 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import ButtonMain from "../../Components/ButtonMain/ButtonMain";
-import SectionTitle from "../../Components/SectionTitle/SectionTitle";
-import InstagramPost from "../../Components/InstagramPost/InstagramPost";
-import useUpAnimation from "../Hooks/useUpAnimation/useUpAnimation";
-import useRightAnimation from "../Hooks/useRightAnimation/useRightAnimation";
-import useLeftAnimation from "../Hooks/useLeftAnimation/useLeftAnimation";
-import useScrollToTop from "../Hooks/useScrollToTop/useScrollToTop";
-import { useEffect } from "react";
+import useUpAnimation from "../Hooks/useUpAnimation";
+import useRightAnimation from "../Hooks/useRightAnimation";
+import useLeftAnimation from "../Hooks/useLeftAnimation";
+import useScrollToTop from "../Hooks/useScrollToTop";
+import SectionTitle from "../Components/SectionTitle";
+import ButtonMain from "../Components/ButtonMain";
+import InstagramPost from "../Components/InstagramPost";
 
 // image url
 const bgImg = "https://i.ibb.co/PrKSzcT/coffee-bg.jpg";

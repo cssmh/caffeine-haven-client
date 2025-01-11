@@ -1,10 +1,7 @@
-
-
 const useScrollToTop = () => {
+  const scrollToTop = () => window.scrollTo(0, 0);
 
-    const scrollToTop = () => window.scrollTo(0, 0)
-
-    return scrollToTop;
+  return scrollToTop;
 };
 
 export default useScrollToTop;

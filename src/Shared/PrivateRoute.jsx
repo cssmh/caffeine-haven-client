@@ -1,20 +1,13 @@
 import { Navigate, useLocation } from "react-router-dom";
-import LoadingAnimation from "../src/Components/LoadingAnimation/LoadingAnimation";
-import useAuthContext from "../src/Hooks/useAuthContext/useAuthContext";
+import useAuthContext from "../Hooks/useAuthContext";
+import LoadingAnimation from "../Components/LoadingAnimation";
 
 const PrivateRoute = ({ children }) => {
-  // hooks and custom hooks
   const { authLoading, currentUser } = useAuthContext();
   const location = useLocation();
 
-  if (authLoading) {
-    return <LoadingAnimation />;
-  }
-
-  if (currentUser) {
-    return children;
-  }
-
+  if (authLoading) return <LoadingAnimation />;
+  if (currentUser) return children;
   return <Navigate state={{ from: location }} to={"/signIn"}></Navigate>;
 };
 
