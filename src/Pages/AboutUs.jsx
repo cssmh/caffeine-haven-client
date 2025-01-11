@@ -3,10 +3,10 @@ import { motion } from "framer-motion";
 import ButtonMain from "../../Components/ButtonMain/ButtonMain";
 import SectionTitle from "../../Components/SectionTitle/SectionTitle";
 import InstagramPost from "../../Components/InstagramPost/InstagramPost";
-import useUpAnimation from "../../Hooks/useUpAnimation/useUpAnimation";
-import useRightAnimation from "../../Hooks/useRightAnimation/useRightAnimation";
-import useLeftAnimation from "../../Hooks/useLeftAnimation/useLeftAnimation";
-import useScrollToTop from "../../Hooks/useScrollToTop/useScrollToTop";
+import useUpAnimation from "../Hooks/useUpAnimation/useUpAnimation";
+import useRightAnimation from "../Hooks/useRightAnimation/useRightAnimation";
+import useLeftAnimation from "../Hooks/useLeftAnimation/useLeftAnimation";
+import useScrollToTop from "../Hooks/useScrollToTop/useScrollToTop";
 import { useEffect } from "react";
 
 // image url

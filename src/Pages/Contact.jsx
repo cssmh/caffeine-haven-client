@@ -1,9 +1,9 @@
 import SectionTitle from "../../Components/SectionTitle/SectionTitle";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import { motion } from "framer-motion";
-import useUpAnimation from "../../Hooks/useUpAnimation/useUpAnimation";
-import useRightAnimation from "../../Hooks/useRightAnimation/useRightAnimation";
-import useScrollToTop from "../../Hooks/useScrollToTop/useScrollToTop";
+import useUpAnimation from "../Hooks/useUpAnimation/useUpAnimation";
+import useRightAnimation from "../Hooks/useRightAnimation/useRightAnimation";
+import useScrollToTop from "../Hooks/useScrollToTop/useScrollToTop";
 import { useEffect } from "react";
 
 const bgImg =

@@ -1,5 +1,5 @@
 import { FaCamera } from "react-icons/fa6";
-import useAxiosPublic from "../../Hooks/useAxiosPublic/useAxiosPublic";
+import useAxiosPublic from "../../Hooks/useAxiosPublic";
 import { useRef, useState } from "react";
 import useCurrentUser from "../../Hooks/useCurrentUser/useCurrentUser";
 import { Link } from "react-router-dom";

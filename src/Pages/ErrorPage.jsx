@@ -1,5 +1,5 @@
 import Lottie from "lottie-react";
-import errorAnimation from "../../assets/error.json";
+import errorAnimation from "../assets/error.json";
 import { Link } from "react-router-dom";
 import ButtonMain from "../../Components/ButtonMain/ButtonMain";
 
