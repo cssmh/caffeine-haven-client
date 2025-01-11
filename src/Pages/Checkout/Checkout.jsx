@@ -14,7 +14,7 @@ const bgImg = "https://i.ibb.co/G2q3W6L/snezhana-hulak-TUc-AOOHd-Mek-unsplash-2.
 
 // stripe
 // TODO: ADD PUBLISHABLE KEY
-const stripePromise = loadStripe(import.meta.env.VITE_Payment_Gateway_Key);
+const stripePromise = loadStripe(import.meta.env.VITE_payment_key);
 
 
 const Checkout = () => {

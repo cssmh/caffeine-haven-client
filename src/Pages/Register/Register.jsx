@@ -9,12 +9,10 @@ import useAxiosPublic from "../../Hooks/useAxiosPublic/useAxiosPublic";
 import useSuccessToast from "../../Hooks/useSuccessToast/useSuccessToast";
 import useFailedToast from "../../Hooks/useFailedToast/useFailedToast";
 
-// background image
 const img1 = "https://i.ibb.co/FWDxTW1/restaurant.jpg";
-
-// imgBB hosting
-const imgHostingKey = import.meta.env.VITE_IMAGE_HOSTING_KEY;
-const imgUploadUrl = `https://api.imgbb.com/1/upload?key=${imgHostingKey}`;
+const imgUploadUrl = `https://api.imgbb.com/1/upload?key=${
+  import.meta.env.VITE_imgBbKey
+}`;
 
 const Register = () => {
   // hooks and custom hooks
