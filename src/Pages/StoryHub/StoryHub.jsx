@@ -8,7 +8,7 @@ import useFailedToast from "../../Hooks/useFailedToast/useFailedToast";
 import useSuccessToast from "../../Hooks/useSuccessToast/useSuccessToast";
 import useAxiosSecure from "../../Hooks/useAxiosSecure/useAxiosSecure";
 import { useQuery } from "@tanstack/react-query";
-import LoadingAnimation from "../../Components/LoadingAnimation/LoadingAnimation";
+import LoadingAnimation from "../../Components/LoadingAnimation";
 import SingleMemory from "./SingleMemory";
 import PinnedMemory from "./PinnedMemory";
 import { motion } from "framer-motion";

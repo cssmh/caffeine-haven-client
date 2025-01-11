@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Zoom } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import ButtonSecond from "../../Components/ButtonSecond/ButtonSecond";
+import ButtonSecond from "../../Components/ButtonSecond";
 
 const sliderImg1 =
   "https://i.ibb.co/G2q3W6L/snezhana-hulak-TUc-AOOHd-Mek-unsplash-2.jpg";

@@ -2,9 +2,9 @@ import { Link, NavLink } from "react-router-dom";
 import ButtonSecond from "../ButtonSecond/ButtonSecond";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { IoBagHandle } from "react-icons/io5";
-import useAuthContext from "../../Hooks/useAuthContext/useAuthContext";
-import useCurrentUser from "../../Hooks/useCurrentUser/useCurrentUser";
-import useCartItems from "../../Hooks/useCartItems/useCartItems";
+import useAuthContext from "../Hooks/useAuthContext/useAuthContext";
+import useCurrentUser from "../Hooks/useCurrentUser/useCurrentUser";
+import useCartItems from "../Hooks/useCartItems/useCartItems";
 import { motion } from "framer-motion"
 
 // website logo
