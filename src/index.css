@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  font-size: 18px;
+  background-color: #0A1316;
+}
+
+::selection {
+  color: #b58753;
+  background-color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0A1316;
+  overflow-x: hidden;
+  color: white;
+  position: relative;
+}
+
+.slider-top-text::before {
+  content: '';
+  display: block;
+  width: 15%;
+  height: 5px;
+  border-radius: 30px;
+  background-color: #b58753;
+  margin: 0 auto 10px;
+}
+
+.section-top-text::before {
+  content: '';
+  display: flex;
+  width: 30px;
+  height: 3px;
+  border-radius: 30px;
+  background-color: #b58753;
+}
+
+.each-slide-effect>div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.button-style {
+  color: rgb(189, 189, 189);
+  font-size: 20px;
+  padding: 15px;
+  transition: all;
+  transition-duration: .8s;
+}
+
+.button-style-left {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.button-style-right {
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+}
+
+
+.button-style:hover {
+  border-radius: 100%;
+  color: white;
+}
+
+
+select option {
+  margin: 40px;
+  background: rgb(0, 0, 0);
+  color: #fff;
+}
+
+
+/* button hover and active style using ::after and ::before */
+.menu-link::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0;
+  transition: all 0.7s ease-in;
+  background-color: #b58753;
+}
+
+.menu-link:hover::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #b58753;
+}
+
+.active-menu-link::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 100%;
+  transition: all 0.7s ease-in;
+  background-color: #b58753;
+}
+
+
+/* tanStack table style */
+.table-description {
+  padding: 10px 10px;
+  text-align: center;
+  border: 1px solid rgb(32, 32, 32);
+}
+
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  display: block;
+  background: url(https://mywildalberta.ca/images/GFX-MWA-Parks-Reservations.png) no-repeat;
+  width: 20px;
+  height: 20px;
+  border-width: thin;
+}
+
+/* payment form style */
+
+.payment-form {
+  color: white;
+  margin: 20px;
+}
+
+.payment-element {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.pay-button:disabled {
+  background-color: #6d6d6d;
+  cursor: not-allowed;
+}
+
+#payment-message {
+  margin-top: 10px;
+  color: #ff0000;
+  font-size: 14px;
+}
