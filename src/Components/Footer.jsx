@@ -75,18 +75,6 @@ const Footer = () => {
         <p className="text-lightWhite">
           Copyright © {currentYear} - All right reserved by Caffeine Haven.
         </p>
-        <p className="text-[15px] mt-4 text-lightWhite">
-          Developed with 🤍 by{" "}
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://nahidul-islam-fahim.web.app"
-          >
-            <span className="text-white border-second border-b-2 pb-1 hover:text-second duration-300">
-              Nahid
-            </span>
-          </a>
-        </p>
       </aside>
     </footer>
   );

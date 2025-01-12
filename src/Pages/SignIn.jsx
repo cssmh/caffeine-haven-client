@@ -49,8 +49,8 @@ const SignIn = () => {
   };
 
   //sign in using Google
-  const handleGoogleSignIn = () => {
-    createNewUserByGoogle()
+  const handleGoogleSignIn = async () => {
+    await createNewUserByGoogle()
       .then((result) => {
         if (result) {
           const data = result?.user;

@@ -6,11 +6,10 @@ import useFadeAnimation from "../../Hooks/useFadeAnimation";
 import CenteredSectionTitle from "../../Components/CenteredSectionTitle";
 
 const WhyUs = () => {
-  // animation hook
   const fadeAnimation = useFadeAnimation();
 
   return (
-    <div className="container mx-auto p-5 mt-[30px] md:mt-[50px] lg:mt-[70px]">
+    <div className="container mx-auto p-5 mt-5">
       <CenteredSectionTitle
         smallText={"Features"}
         bigText={"Why People Choose Us?"}

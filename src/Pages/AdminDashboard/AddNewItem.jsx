@@ -101,7 +101,10 @@ const AddNewItem = () => {
                 }
               })
               // database adding failed
-              .catch((err) => failedToast(err.code));
+              .catch((err) => {
+                console.log(err);
+                failedToast(err.code);
+              });
           }
         })
         // imgBb hosting failed

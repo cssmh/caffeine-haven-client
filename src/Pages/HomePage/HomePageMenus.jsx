@@ -6,10 +6,8 @@ import SingleMenuList from "../../Components/SingleMenuList";
 import ButtonMain from "../../Components/ButtonMain";
 
 const HomePageMenus = () => {
-  // hooks and custom hooks
   const axiosPublic = useAxiosPublic();
 
-  // data fetch
   const { isPending: homeMenusPending, data: homeMenus } = useQuery({
     queryKey: ["home-menus"],
     queryFn: async () => {
@@ -26,7 +24,7 @@ const HomePageMenus = () => {
   }
 
   return (
-    <div className="mt-[30px] md:mt-[50px] lg:mt-[70px] container mx-auto flex flex-col justify-center items-center gap-10 px-5 py-10">
+    <div className="mt-5 container mx-auto flex flex-col justify-center items-center gap-10 px-5">
       <CenteredSectionTitle
         smallText={"Enjoy Our Menu"}
         bigText={"Our Latest Collection"}
