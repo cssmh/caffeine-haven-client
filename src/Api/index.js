@@ -1,5 +1,5 @@
 import axios from "axios";
-import { clearCookie, userLogout } from "./Auth";
+// import { clearCookie, userLogout } from "./Auth";
 import { toast } from "sonner";
 
 const axiosSecure = axios.create({
@@ -11,11 +11,11 @@ axiosSecure.interceptors.response.use(
   async (error) => {
     // console.log("Error in the interceptor", error);
     if (error.response.status === 401 || error.response.status === 403) {
-      await clearCookie();
+      // await clearCookie();
       toast.error(
         "Your Session has expired! Please log in again."
       );
-      await userLogout();
+      // await userLogout();
       history.push("/login");
     }
 
